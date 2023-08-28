@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fffae6
+}
+
+.first-page {
+    height: 100vh;
+    background: url('../img/sfondo-desktop.png') center no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+    padding-top: 30px;
+}
+
+.navbar-brand {
+    font-family: 'Lumanosimo', cursive;
+}
+
+.container-fluid li {
+    text-transform: uppercase;
+    font-family: 'Livvic', sans-serif;
+}
+
+.nav-link {
+    color: black;
+}
+
+.description {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 120px;
+    margin-left: 5px;
+    text-align: center;
+}
+
+.orange-color {
+    color: #f8a039;
+}
+
+.bg-orange-color {
+    background-color: #f8a039;
+}
+
+.bg-yellow {
+    background-color: #f9ef4a;
+}
+
+select, label {
+    cursor: pointer;
+}
+
+#burgerName {
+    width: 100%;
+}
+
+
+div.ingredient {
+    width: 100%;
+    overflow: hidden;
+}
+
+label {
+    width: 100%;
+}
+
+.ingredient-image {
+    width: 15%;
+    transition: transform 0.4s ease;
+}
+
+.ingredient:hover .ingredient-image{
+    transform: rotate(20deg);
+}
+
+.ingredient-choice {
+    width: 50%;
+}
+
+.price-choise {
+    width: 30%;
+}
+
+.pixel25 {
+    font-size: 1.5625em
+}
+
+.btn-submit:hover {
+    background-color: #fef993;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 992px) {
+    .first-page {
+        background: url('../img/sfondo-mobile.png') center no-repeat;
+        background-size: cover;
+        margin: 0 auto;
+    }
+    .second-page {
+        background: none;
+    }
+
+    #burgerName{
+        width: 100%;
+    }
+    option {
+        font-size: 0.7em;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .description{
+        margin-top: 80px;
+    }
+    .navbar {
+        padding-top: 20px;
+    }
+    .cont-2page{
+        width: 90%;
+        margin: 0 auto;
+    }
+    #price, #burger-summary {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .contact {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    
+    .vertical-center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: calc(100vh - 80px - 40px); 
+    }
+}
